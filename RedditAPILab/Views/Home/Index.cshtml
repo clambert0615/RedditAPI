@@ -1,0 +1,7 @@
+﻿@model Post
+
+@for (int i = 0; i < 10; i++)
+{
+    <p>@Model.data.children[i].data.title</p>
+    <a href="@Model.data.children[i].data.url"><img src="@Model.data.children[i].data.thumbnail" /></a>
+}
